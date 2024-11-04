@@ -1,0 +1,40 @@
+<!DOCTYPE html> <!-- This line declares the document type to be HTML -->
+
+<html> <!-- The root element of an HTML page -->
+  <head> <!-- Contains meta-information and links to external resources -->
+    <meta charset="utf-8"> <!-- Specifies the character encoding for the HTML document -->
+    <title> Simple Login In Page  </title> <!-- Defines the title of the document -->
+    <link rel="stylesheet" href="/css/style.css"> <!-- Links an external CSS file -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Links an external CSS file for icons -->
+  </head>
+
+  <body> <!-- Represents the content of an HTML document -->
+    <div class = "wrapper"> <!-- A container for other HTML elements -->
+      <form> <!-- Defines an HTML form for user input -->
+        <h1> Login </h1> <!-- Defines a heading -->
+        <div class = "input-box"> <!-- A container for input fields -->
+          <input type = "text" placeholder="Username" required> <!-- Defines a text input field -->
+          <i class='bx bxs-user'></i> <!-- An icon from the linked CSS file -->
+        </div>
+
+        <div class = "input-box"> <!-- Another container for input fields -->
+          <input type = "password" placeholder="Password" required> <!-- Defines a password input field -->
+          <i class='bx bxs-lock-alt'></i> <!-- Another icon from the linked CSS file -->
+        </div>
+
+        <div class = "remember-forgot"> <!-- A container for checkboxes and links -->
+          <label> <!-- Defines a label for an input element -->
+            <input type = "checkbox"> Remember Me <!-- Defines a checkbox input field -->
+            <a href="#"> Forgot Password?</a> <!-- Defines a hyperlink -->
+          </label>
+        </div>
+
+        <button type = "submit" class = "btn"> Login </button> <!-- Defines a clickable button -->
+
+        <p class = "register-link"> <!-- Defines a paragraph -->
+          Don't have an account? <a href="#">Register Now</a> <!-- Defines a hyperlink -->
+        </p>
+      </form>
+    </div>
+  </body>
+</html>

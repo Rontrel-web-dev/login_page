@@ -1,0 +1,119 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box; /* Keeps box-sizing consistent with browsers */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* Correct the path to the background image */
+  background: url(/images/background.png) no-repeat;
+  background-size: cover;
+  background-size: center;
+}
+
+/* Login form styles */
+.wrapper {
+  width: 420px;
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 30px 40px;
+  backdrop-filter: blur(4px); /* Adds a blur effect to the background */
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center; /* Centers the heading text */
+}
+
+.wrapper .input-box {
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+  position: relative; /* Allows positioning of child elements */
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+  color: white;
+  font-size: 16px;
+  padding: 20px 45px 20px 45px; /* Adds padding to the input field */
+}
+
+.input-box input::placeholder {
+  color: white; /* Changes the color of placeholder text */
+}
+
+.input-box i {
+  position: absolute;
+  right: 20px;
+  top: 30%;
+  transform: translate(-50%);
+  font-size: 20px; /* Changes the size of the icon */
+}
+
+.wrapper .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+  flex-direction: column; /* Changes the flex direction to column */
+  align-items: flex-start; /* Aligns the items to the start of the flex container */
+}
+
+.remember-forgot label input {
+  accent-color: white; /* Changes the accent color of the checkbox */
+  margin-right: 3px; /* Adds right margin to the checkbox */
+}
+
+.remember-forgot a {
+  color: white;
+  text-decoration: none; /* Removes the underline from links */
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline; /* Adds an underline to links when hovered */
+}
+
+.wrapper .btn {
+  width: 100%;
+  height: 45px;
+  background: white;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a shadow effect to the button */
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+  font-weight: 600; /* Makes the text bold */
+}
+
+.wrapper .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px; /* Adds margin to the register link */
+}
+
+.register-link p a {
+  color: white;
+  text-decoration: none; /* Removes the underline from links */
+  font-weight: 600; /* Makes the text bold */
+}
+
+.register-link p a:hover {
+  text-decoration: underline; /* Adds an underline to links when hovered */
+}
